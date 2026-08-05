@@ -3,17 +3,18 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    min-height: 90vh;
     width: 100%;
     background-color: #000000;
-    background: url("assets/rockCityBanner2.png") repeat;
-    background-image: url("../Rock City Recording/src/assets/rockCityBanner2.png");
+    background: url("/rock-city-recording/src/assets/rockCityBanner2.png") repeat;
+    // background-image: url("/assets/rockCityBanner2.png");
 
 } 
 
 
 .rate-title-container {
     width: 100%;
+    // height: 80vh;
 }
 
 .rate-title {
