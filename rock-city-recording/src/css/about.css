@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  margin: 0;
+}
+body main {
+  margin-top: 12em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+body main .border {
+  border-bottom: 2px solid #19adb2;
+}
+body main p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 2em;
+  max-width: 1050px;
+}
+body main .cap {
+  width: 95%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main .cap p {
+  font-weight: 600;
+}
+body main .dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #19adb2;
+}
+body main .dot-bottom {
+  margin-top: 1em;
+}
+body main .dot-top {
+  margin-bottom: 1em;
+}
+body main section:nth-child(even) {
+  background-color: black;
+  color: white;
+}
+body main .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 1em 0;
+}
+body main .section h3 {
+  font-size: 1.5em;
+  border-bottom: 2px solid #19adb2;
+}
+body main .section p {
+  width: 90%;
+}

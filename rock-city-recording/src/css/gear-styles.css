@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  color: black;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+body header .logo h1 {
+  color: white;
+}
+body main {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5em;
+}
+body main .software {
+  margin-bottom: 1em;
+}
+body main .list-section:nth-child(even) {
+  background-color: rgb(233, 232, 232);
+}
+body main .list-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1em;
+}
+body main .list-section .section-title {
+  font-size: 1.8rem;
+  font-size: clamp(1.8rem, 1.5535211268rem + 0.7887323944vw, 2.5rem);
+  font-weight: 900;
+  text-align: center;
+}
+body main .list-section ul {
+  padding: 0;
+}
+body main .list-section ul li {
+  list-style-type: none;
+  text-align: center;
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.7535211268rem + 0.7887323944vw, 1.7rem);
+  height: 2.8rem;
+}
+body main .list-section ul li:nth-child(1) {
+  font-weight: 800;
+}
+body main .list-section ul .not-bold {
+  font-weight: normal !important;
+}
+body main .list-section .img-container {
+  width: 95vw;
+  max-width: 700px;
+  height: 50vw;
+  max-height: 400px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+body main .list-section .img-container img {
+  width: 100%;
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
+}
+body main .list-section .img-container .preamp-img {
+  -webkit-transform: translateY(-110px);
+          transform: translateY(-110px);
+}
+body main .list-section .img-container .instruments-img {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+body main .list-section .img-container .preamp2-img {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  margin-bottom: 2em;
+}
