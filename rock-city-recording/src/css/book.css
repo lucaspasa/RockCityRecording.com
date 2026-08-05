@@ -16,7 +16,7 @@ main {
   width: 100%;
   background-color: #000000;
   background: url("assets/rockCityBanner2.png") repeat;
-  background-image: url("../Rock City Recording/src/assets/rockCityBanner2.png");
+  background-image: url("/rock-city-recording/src/assets/rockCityBanner2.png");
   z-index: 0;
 }
 
