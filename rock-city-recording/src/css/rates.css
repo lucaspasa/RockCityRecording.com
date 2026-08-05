@@ -15,7 +15,7 @@ main {
   min-height: 90vh;
   width: 100%;
   background-color: #000000;
-  background: url("/rock-city-recording/src/assets/rockCityBanner2.png") repeat;
+  background: url("https://imgur.com/Yy0Kg8h") repeat;
 }
 
 .rate-title-container {
@@ -59,8 +59,6 @@ main {
   max-width: 600px;
   padding: 20px;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 10px 3px rgb(0, 0, 0);
-          box-shadow: 0px 0px 10px 3px rgb(0, 0, 0);
   color: white;
   font-size: 1em;
   text-align: center;
