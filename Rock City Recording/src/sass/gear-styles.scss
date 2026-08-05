@@ -1,0 +1,92 @@
+
+$blue:#19adb2;
+$yellow: #DAD674; 
+$black: rgb(20, 20, 20);
+$font: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+    color: black;
+    background-color: white;
+    font-family: $font;
+    margin: 0;
+    header{
+        .logo{
+            h1{
+                color: white;
+            }
+        }
+       
+    } // X HEADER X
+   main{
+       background-color: white;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-top: 5em;
+       .software{
+        margin-bottom: 1em;
+       }
+       .list-section:nth-child(even){
+           background-color: rgb(233, 232, 232);
+        //    color: white;
+       }
+       .list-section{
+           width: 100%;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           padding-bottom: 1em;
+            .section-title{
+                font-size: 1.8rem;
+                font-size: clamp(1.8rem, 1.5535211267605635rem + 0.7887323943661971vw, 2.5rem);
+                font-weight: 900;
+                text-align: center;
+            }
+            ul{
+                // border: 2px dotted green;
+                padding: 0;
+                li{
+                    list-style-type: none;
+                    // border: 2px solid red;
+                    text-align: center;
+                    font-size: 1rem;
+                    font-size: clamp(1rem, 0.7535211267605634rem + 0.7887323943661971vw, 1.7rem);
+                    height: 2.8rem;
+                }
+                li:nth-child(1){
+                    font-weight: 800;
+                }
+                .not-bold{
+                    font-weight: normal !important; 
+                }
+            }
+            .img-container{
+                width: 95vw;
+                max-width: 700px;
+                height: 50vw;
+                max-height: 400px;
+                overflow: hidden;
+                border-radius: 5px;
+                img{
+                    width: 100%;
+                    transform: translateY(-80px);
+                }
+                .preamp-img{
+                    transform: translateY(-110px);
+                }
+                .instruments-img{
+                    transform: translateY(-100px);
+                }
+                .preamp2-img{
+                    transform: translateY(-100px);
+                    margin-bottom: 2em;
+                }
+            }
+       } // X LIST-SECTION X
+   } // X MAIN X
+    
+} // X BODY X
+
+

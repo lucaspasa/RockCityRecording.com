@@ -1,0 +1,182 @@
+
+$blue:#19adb2;
+$yellow: #DAD674; 
+$black: rgb(20, 20, 20);
+$font: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+// ALL STYLES
+
+main {
+        position: relative;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // border: 2px solid yellow;
+            background-color: rgb(20, 20, 20);
+            
+
+        // border: 2px solid green;
+}
+        // BODY CONTENT 
+        body{
+            
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            width: 100%;
+            background-color: rgb(20, 20, 20);
+            display: flex;
+            flex-direction: column;
+
+            .background-container{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                // border: 2px solid red;
+                background-color: black;
+                background: url("assets/rockCityBanner2.png") repeat;
+                background-image: url("../Rock City Recording/src/assets/rockCityBanner2.png");
+
+                padding: 0;
+                width: 100%;
+                .background{
+                    width: 100%;
+                    max-width: 1200px;
+                    // height: 80vh;
+                    object-fit: cover;
+                    object-position: center;
+                    // border: 2px solid blue;
+
+                }
+            }
+    }
+    
+// DESKTOP ONLY STYLES
+@media only screen and (min-width: 500px){
+    
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(20, 20, 20);
+        color: white;
+    }
+
+    body {
+        margin: 0;
+        color: white;
+        min-height: 100%;
+        // background-color: black;
+        width: 100vw;
+        // border: 2px solid red;
+    }
+    
+    
+    
+
+    
+    // FOOTER
+    footer{
+        background-color: rgb(20, 20, 20);
+        text-align: center;
+        align-self: flex-end;
+        bottom: 0;
+        height: 5rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        
+        
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            list-style-type: none;
+            li{
+                margin: 0 1em;
+            }
+        }
+    }
+}
+
+
+
+
+
+// MOBILE STYLES 
+
+@media only screen and (max-width: 500px){
+    main{
+        background-color: rgb(20, 20, 20);
+    }
+    body{
+        background-color: rgb(20, 20, 20);
+        }//X MAIN X
+        footer{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(20, 20, 20);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                // border: 2px solid red;
+            }
+            ul{
+                display: flex;
+                list-style: none;
+                align-items: center;
+                justify-content: space-evenly;
+                // border: 2px solid brown;
+                padding: 0;
+                li{
+                    text-align: center;
+                    font-size: .8em;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    // border: 2px dashed green;
+                    margin: 0;
+                    span{
+                        font-size: .8em;
+                    }
+                }
+                .place{
+                    order: 1
+                }
+                .line1{
+                    order: 2;
+                }
+                .email{
+                    order: 3;
+                }
+                .line2{
+                    order: 4;
+                }
+                .phone {
+                    order: 5;
+                }
+            }
+        } // X FOOTER X
+    }//X BODY X
+
+
+
+
