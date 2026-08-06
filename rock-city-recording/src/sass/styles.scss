@@ -135,10 +135,16 @@ main {
 
             div{
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 align-items: center;
                 justify-content: center;
+                width: 100%;
                 // border: 2px solid red;
+                font-size: .8em;
+            }
+
+            #current-year{
+                margin-right: 5px;
             }
             ul{
                 display: flex;
