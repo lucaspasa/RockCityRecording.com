@@ -41,6 +41,7 @@ body{
                     box-sizing: border-box;
                     padding: 0;
                     
+                    pointer-events: none;
                     img{
                         width: 80px;
                         height: 80px;
@@ -88,20 +89,34 @@ body{
                         flex-direction: row;
                         align-items: center;
                         justify-content: space-between;
-                        // border: 2px solid rgb(255, 255, 255);
+                        // border: 2px solid green;
 
+                        display: flex;
+                         align-items: stretch; /* Allows children to expand fully vertically */
 
                         li{
                             text-align: center;
                             // border: 2px solid rgb(255, 255, 255);
                             margin: 0;
                             padding: 1em;
+                            display: flex;
+                             align-items: stretch; /* Allows children to expand fully vertically */
                             a{
+                                display: block;
                                 text-decoration: none;
                                 color: white;
                                 font-size: 2em;
                                 font-family: $font;
                                 font-weight: 100;
+                                // border: 2px solid orange;
+                                padding: .5em;
+
+                                display: flex;             /* or inline-flex */
+                                align-items: center;       /* Center the text vertically inside the box */
+                                justify-content: center;   /* Center the text horizontally */
+                                align-self: stretch;       /* Forces the link to fill full vertical height */
+                                padding: 0 1.25rem;        /* Horizontal padding for width */
+                                height: 100%;
 
                             }
                             
