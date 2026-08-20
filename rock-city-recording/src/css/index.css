@@ -1,32 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .book-now {
   position: absolute;
-  top: 70vh;
+  top: 50vh;
   left: 30%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 2;
+  color: white;
 }
 .book-now h1 {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
   line-height: 0.9;
   letter-spacing: -1px;
+  font-size: 4em;
 }
 .book-now .subtitle {
   font-family: "Roboto Condensed", sans-serif;
   max-width: 200px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.2;
   letter-spacing: -1px;
+  font-size: 1.5em;
 }
 .book-now .book-now-button {
   background-color: #19adb2;
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.2em;
-  padding: 1em 2em;
+  padding: 0.5em 2em;
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -55,9 +58,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -79,7 +79,8 @@ body {
           flex-direction: column;
 }
 body .background-container {
-  position: relative;
+  position: absolute;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,6 +100,7 @@ body .background-container {
   background-image: url("../Rock City Recording/src/assets/rockCityBanner2.png");
   padding: 0;
   width: 100%;
+  max-height: 100vh;
 }
 body .background-container .background {
   width: 100%;
@@ -118,8 +120,9 @@ body .background-container .background {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: rgb(20, 20, 20);
     color: white;
+    height: 100vh;
+    min-height: 100vh;
   }
   body {
     margin: 0;
@@ -163,8 +166,49 @@ body .background-container .background {
   }
 }
 @media only screen and (max-width: 500px) {
+  .book-now {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    left: 0;
+    top: 10%;
+  }
+  .background-container {
+    position: absolute;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+    background-color: black;
+    background: url("assets/rockCityBanner2.png") repeat;
+    background-image: url("../Rock City Recording/src/assets/rockCityBanner2.png");
+    padding: 0;
+    width: 100%;
+    max-height: 100vh;
+  }
+  .background-container .background {
+    width: 100%;
+    height: 80vh;
+    max-width: 1200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
   main {
     background-color: rgb(20, 20, 20);
+    height: 80vh;
+    min-height: 80vh;
   }
   body {
     background-color: rgb(20, 20, 20);

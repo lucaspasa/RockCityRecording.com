@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+header {
+  z-index: 10;
+}
+
+main {
+  z-index: 1;
+}
+
+footer {
+  z-index: 10;
+}
+
 @media only screen and (min-width: 500px) {
   body header {
     display: -webkit-box;
@@ -123,8 +135,6 @@
   }
   body .container {
     max-width: 1600px;
-    width: 1200px;
-    border: 2px solid black;
   }
   body .main {
     margin: auto;
